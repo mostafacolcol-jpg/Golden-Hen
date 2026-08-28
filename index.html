@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mustafa Gold Hen (FW 9.xx)</title>
   <link rel="stylesheet" href="style.css">
+  <script src="payload.js"></script>
 </head>
 <body>
 
@@ -19,27 +20,30 @@
     <section class="group">
       <h3>Mods</h3>
       <div class="btn-grid">
-        <a href="#" class="btn">Prx Installer gta5 rdr2</a>
+        <a href="#" class="btn" onclick="load_gtabeef138()">Prx Installer gta5 rdr2</a>
       </div>
     </section>
 
     <section class="group">
       <h3>Payloads</h3>
       <div class="btn-grid">
-        <a href="#" class="btn">Backup Pkg</a>
-        <a href="#" class="btn">Dumper Game</a>
-        <a href="#" class="btn">DB Backup</a>
-        <a href="#" class="btn">DB Restore</a>
-        <a href="#" class="btn">Disabled Update</a>
-        <a href="#" class="btn">Enabled Update</a>
-        <a href="#" class="btn">Ps4debug</a>
-        <a href="#" class="btn">Install Aio fix</a>
+        <a href="#" class="btn" onclick="load_pkg()">Backup Pkg</a>
+        <a href="#" class="btn" onclick="load_dumper()">Dumper Game</a>
+        <a href="#" class="btn" onclick="load_cacheinstall2()">DB Backup</a>
+        <a href="#" class="btn" onclick="load_cacheinstall()">DB Restore</a>
+        <a href="#" class="btn" onclick="load_disabled_update()">Disabled Update</a>
+        <a href="#" class="btn" onclick="load_enabled_update()">Enabled Update</a>
+        <a href="#" class="btn" onclick="load_ps4debug()">Ps4debug</a>
+        <a href="#" class="btn" onclick="load_fix()">Install Aio fix</a>
       </div>
     </section>
 
     <span class="fw-badge">FW-</span>
 
     <a href="theme.html" class="btn-primary">Themes</a>
+
+    <!-- عنصر لعرض الرسالة -->
+    <div id="status"></div>
 
     <footer>
       <a href="#" target="_blank">Mustafa</a> - ! Pass = : Fail =
