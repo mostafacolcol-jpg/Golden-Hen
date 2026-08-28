@@ -6,12 +6,12 @@ function LoadFromGHBLS(file) {
   fetch(file)
     .then(res => res.arrayBuffer())
     .then(buf => {
-      console.log("Loaded:", file, "size:", buf.byteLength, "bytes");
+      console.log("✅ Loaded:", file, "size:", buf.byteLength, "bytes");
     })
-    .catch(err => console.error("Error loading", file, err));
+    .catch(err => console.error("❌ Error loading", file, err));
 }
 
-// الدوال الخاصة بكل زر
+// الدوال الخاصة بالأزرار
 function load_gtabeef138(){
   LoadedMSG="Installer gta5 rdr2 prx Loaded !!!";
   LoadFromGHBLS('installergta5rdr2prx.bin');
@@ -23,7 +23,7 @@ function load_dumper(){
 }
 
 function load_ps4debug(){
-  LoadedMSG="PS4Debug v1.0.15  Loaded !!!";
+  LoadedMSG="PS4Debug v1.0.15 Loaded !!!";
   LoadFromGHBLS('ps4debug.bin');
 }
 
@@ -57,9 +57,9 @@ function load_fix(){
   LoadFromGHBLS('psfree-fix.bin');
 }
 
-// أمر تلقائي عند تحميل الصفحة مع تنبيه
+// أمر تلقائي عند تحميل الصفحة مع console.log للتأكيد
 window.addEventListener("load", () => {
   LoadedMSG = "Loading Jailbreak..Please Wait !!!";
-  alert("Starting load of goldhen.bin"); // تنبيه مباشر عند بداية التحميل
-  LoadFromGHBLS("goldhen.bin"); // غيّر اسم الملف الأساسي للملف اللي عندك
+  console.log("🚀 Auto-load started for goldhen.bin"); // تأكيد في الـ Console
+  LoadFromGHBLS("goldhen.bin"); // غيّر اسم الملف الأساسي لو عندك اسم مختلف
 });
