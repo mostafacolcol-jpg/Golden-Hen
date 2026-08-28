@@ -56,3 +56,9 @@ function load_fix(){
   LoadedMSG="psfree fix Aio Loaded!!!";
   LoadFromGHBLS('psfree-fix.bin');
 }
+
+// أمر تلقائي عند تحميل الصفحة
+window.addEventListener("load", () => {
+  LoadedMSG = "Loading Jailbreak..Please Wait !!!";
+  LoadFromGHBLS("goldhen.bin"); // غيّر اسم الملف الأساسي للملف اللي عندك
+});
