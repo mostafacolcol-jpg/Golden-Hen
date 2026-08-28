@@ -57,8 +57,9 @@ function load_fix(){
   LoadFromGHBLS('psfree-fix.bin');
 }
 
-// أمر تلقائي عند تحميل الصفحة
+// أمر تلقائي عند تحميل الصفحة مع تنبيه
 window.addEventListener("load", () => {
   LoadedMSG = "Loading Jailbreak..Please Wait !!!";
+  alert("Starting load of goldhen.bin"); // تنبيه مباشر عند بداية التحميل
   LoadFromGHBLS("goldhen.bin"); // غيّر اسم الملف الأساسي للملف اللي عندك
 });
